@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<header>
+<title>Form For Census Information</title>
+<h1>CENSUS INFORMATION FORM</h1>
+</header>
+<body background= "tree image.jpg">
+    <h1 style= "color: black"; text-align: fill; padding-top: 20%></h1>
+<head>
+    <style>
+     body { 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding; 20px;
+            background-color: #f4f4f9; 
+    }
+     h1 {
+      text-align: center;
+      color: #c2bcbc;
+    }
+    .form-container {
+      max-width: 700px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .form-container label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    .form-container button {
+      width: 10%;
+      padding: 12px;
+      background-color: #000f01;
+      color: rgb(243, 240, 240);
+    }
+    </style>
+    </head>
+    <body>
+<br>
+<div class="form-container">
+    <label for Full name>FULL NAME:</label>
+    <input type = "text" id = "full-name" name = "Full_name" required placeholder="Enter your full name">
+</br>
+<br>
+<label for Address>Address:</label>
+    <input type = "text" id = "address" name = "address" required placeholder="Enter your address">
+</br>
+<br>
+<label for postcode>Postcode:</label>
+    <input type = "text" id = "postcode" name = "postcode" required placeholder="Enter your postcode">
+</br>
+<br>
+<label for marital status>Marital Status:</label>
+<select id="marital-status" name="marital_status" required>
+    <option value = "" >Select your marital status</option>
+    <option value="single">Single</option>
+    <option value="married">Married</option>
+    <option value="divorced">Divorced</option>
+    <option value="widowed">Widowed</option>
+</br>
+    </select>
+    <br>
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday" required>
+  </br>
+  <br>
+    <label for="education">Education Level:</label>
+    <select id="education" name="education" required>
+      <option value="">Select your education level</option>
+      <option value="high-school">High School</option>
+      <option value="associate-degree">Associate Degree</option>
+      <option value="bachelor-degree">Bachelor's Degree</option>
+      <option value="master-degree">Master's Degree</option>
+      <option value="doctorate">Doctorate</option>
+    </select>
+  </br>
+  <br>
+    <label for="ni-number">National Insurance Number (Masked):</label>
+    <input type="password" id="ni-number" name="ni_number" class="masked-input" required placeholder="XX 00 00 00 X" maxlength="14">
+  </br>
+  
+  <br>
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" name="comments" rows="4" placeholder="Any additional information?"></textarea>
+  </br>
+<br>
+    <button type="submit">Submit</button>
+  </br>
+  </form>
+</body>
+</html>
