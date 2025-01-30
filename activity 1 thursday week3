@@ -1,0 +1,51 @@
+// Task 1: Calculate BMI for Sarah
+let sarahWeight = 68; // Sarah's weight in kg
+let sarahHeight = 1.65; // Sarah's height in meters
+
+// BMI formula: weight (kg) / height (m)^2
+let sarahBMI = sarahWeight / (sarahHeight * sarahHeight);
+
+// Round the BMI to 1 decimal place using Math.round()
+sarahBMI = Math.round(sarahBMI * 10) / 10;
+
+console.log(`Sarah's BMI is ${sarahBMI}`);
+
+// Task 2: Find Maximum Weight Lifted by John
+let johnWeights = [40, 60, 55, 70, 65]; 
+
+// Use Math.max() to find the heaviest weight
+let maxWeightLifted = Math.max(...johnWeights);
+
+console.log(`The heaviest weight John lifted is ${maxWeightLifted} kg`);
+
+// Task 3: Calculate Total Calories Burned on the Treadmill
+let caloriesPerMinute = 8.5; 
+let workoutDuration = 37; 
+
+// Calculate total calories burned
+let totalCaloriesBurned = caloriesPerMinute * workoutDuration;
+
+// Round the total calories to the nearest whole number using Math.round()
+totalCaloriesBurned = Math.round(totalCaloriesBurned);
+
+console.log(`Total calories burned: ${totalCaloriesBurned}`);
+
+// Task 4: Random Free Membership Winner
+let totalMembers = 50; 
+
+// Generate a random member ID between 1 and 50 using Math.random() and Math.ceil()
+let winnerID = Math.ceil(Math.random() * totalMembers);
+
+console.log(`The winner of the free one-month membership is member ID: ${winnerID}`);
+
+// Task 5: Calculate Monthly Revenue
+let monthlyFee = 45.99; 
+let totalMembersCount = 123; 
+
+// Calculate total monthly revenue
+let totalRevenue = monthlyFee * totalMembersCount;
+
+// Use Math.floor() to remove cents and show only the whole dollar amount
+totalRevenue = Math.floor(totalRevenue);
+
+console.log(`Total monthly revenue: £${totalRevenue}`);
