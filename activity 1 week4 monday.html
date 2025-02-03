@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+</head>
+<body>
+    <h1>Library</h1>
+    <button onclick="addNewBook()">Add New Book</button>
+ 
+    <script>
+ 
+ 
+        const library = {
+            book1: {
+                title: "The Great Gatsby",
+                author: "Powdri Salim",
+                year: 1925,
+                available: true
+            },
+            book2: {
+                title: "Mockingbird",
+                author: "Bobby",
+                year: 1960,
+                available: true
+            },
+            book3: {
+                title: "The Great Monster",
+                author: "Lado Rani",
+                year: 1813,
+                available: false
+            }
+        };
+ 
+        function addNewBook() {
+            const title = prompt("Enter the book title:");
+            const author = prompt("Enter the book author:");
+            const year = prompt("Enter the book year:");
+            const available = prompt("Is the book available? (yes/no)") === "yes";
+ 
+            
+            const newBookKey = `book${Object.keys(library).length + 1}`;
+            library[newBookKey] = {
+                title: title,
+                author: author,
+                year: parseInt(year),
+                available: available
+            };
+ 
+            alert(Object.keys(library)); 
+        }
+    </script>
+</body>
+</html>
+ 
